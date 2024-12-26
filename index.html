@@ -1,221 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Career Guidance</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f3f3f3;
-        }
-
-        header {
-            background-color: #ff5f5f;
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        header p {
-            font-size: 1.2rem;
-        }
-
-        nav {
-            text-align: center;
-            background-color: #333;
-        }
-
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            display: inline-block;
-            transition: background-color 0.3s ease;
-        }
-
-        nav a:hover {
-            background-color: #ff5f5f;
-        }
-
-        .hero-section {
-            background-image: url('https://via.placeholder.com/1920x600/ff5f5f/ffffff?text=Career+Guidance');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 120px 20px;
-            text-align: center;
-        }
-
-        .hero-section h2 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        .hero-section p {
-            font-size: 1.3rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .services, .resources, .contact {
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .services h2, .resources h2, .contact h2 {
-            font-size: 2.5rem;
-            color: #ff5f5f;
-            margin-bottom: 30px;
-        }
-
-        .services div, .resources div {
-            display: inline-block;
-            width: 30%;
-            padding: 20px;
-            box-sizing: border-box;
-            background-color: #fff;
-            border-radius: 8px;
-            margin: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .services div:hover, .resources div:hover {
-            transform: translateY(-10px);
-        }
-
-        .services div img, .resources div img {
-            width: 100%;
-            border-radius: 8px;
-        }
-
-        .services div h3, .resources div h3 {
-            color: #ff5f5f;
-            margin-top: 15px;
-            font-size: 1.5rem;
-        }
-
-        .contact form input, .contact form textarea {
-            width: 100%;
-            padding: 14px;
-            margin-bottom: 10px;
-            border: 2px solid #ff5f5f;
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-        }
-
-        .contact form input:focus, .contact form textarea:focus {
-            border-color: #ff2a2a;
-        }
-
-        .contact button {
-            padding: 14px 40px;
-            background-color: #ff5f5f;
-            color: white;
-            font-size: 1.2rem;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .contact button:hover {
-            background-color: #ff2a2a;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 1rem;
-        }
-
-    </style>
+    <title>Career Guidance Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
+    <!-- Header -->
     <header>
-        <h1>Career Guidance</h1>
-        <p>Empowering Your Future with the Right Career Path</p>
+        <h1>Career Guidance Portal</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#resources">Resources</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#resources">Resources</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>
+            <span class="word">Welcome</span> 
+            <span class="word">to</span> 
+            <span class="word">Career</span> 
+            <span class="word">Portal</span>
+        </h2>
+        <p>Your ultimate guide to choosing the right career path!</p>
+        <button>Get Started</button>
+    </section>
 
-    <div class="hero-section">
-        <h2>Welcome to Career Guidance</h2>
-        <p>Your journey to career success starts here! We offer personalized advice and tools to help you unlock your potential.</p>
-    </div>
+    <!-- Photo Cards Section -->
+    <section class="sections">
+        <div class="card">
+            <img src="Interview.webp" alt="Card Image 1">
+            <h3>Career Quiz</h3>
+            <p>Take our quiz to find the career that suits you best.</p>
+        </div>
+        <div class="card">
+            <img src="study.webp" alt="Card Image 2">
+            <h3>Resources</h3>
+            <p>Explore articles, videos, and tutorials for career planning.</p>
+        </div>
+        <div class="card">
+            <img src="cerrear.webp" alt="Card Image 3">
+            <h3>Job Board</h3>
+            <p>Find job opportunities and internships in your field of interest.</p>
+        </div>
+    </section>
 
-    <div class="services" id="services">
-        <h2>Our Services</h2>
-        <div>
-            <img src="https://via.placeholder.com/400x300/ff5f5f/ffffff?text=Resume+Building" alt="Resume Building">
-            <h3>Resume Building</h3>
-            <p>Get your resume reviewed by experts and make sure it stands out to employers.</p>
-        </div>
-        <div>
-            <img src="https://via.placeholder.com/400x300/ff5f5f/ffffff?text=Career+Coaching" alt="Career Coaching">
-            <h3>Career Coaching</h3>
-            <p>Our experienced coaches help guide you through career decisions and job searches.</p>
-        </div>
-        <div>
-            <img src="https://via.placeholder.com/400x300/ff5f5f/ffffff?text=Job+Placement+Assistance" alt="Job Placement Assistance">
-            <h3>Job Placement Assistance</h3>
-            <p>We help you connect with top companies and land your dream job.</p>
-        </div>
-    </div>
-
-    <div class="resources" id="resources">
-        <h2>Career Resources</h2>
-        <div>
-            <img src="https://via.placeholder.com/400x300/ff5f5f/ffffff?text=Skill+Development" alt="Skill Development">
-            <h3>Skill Development</h3>
-            <p>Enhance your skill set with our top-rated online courses and workshops.</p>
-        </div>
-        <div>
-            <img src="https://via.placeholder.com/400x300/ff5f5f/ffffff?text=Job+Search+Tips" alt="Job Search Tips">
-            <h3>Job Search Tips</h3>
-            <p>Discover the best strategies to improve your job search and increase your chances of success.</p>
-        </div>
-        <div>
-            <img src="https://via.placeholder.com/400x300/ff5f5f/ffffff?text=Industry+Insights" alt="Industry Insights">
-            <h3>Industry Insights</h3>
-            <p>Stay informed with the latest trends and insights across different industries.</p>
-        </div>
-    </div>
-
-    <div class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Career Guidance. All Rights Reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Career Guidance Portal. All rights reserved.</p>
+        <p>Follow us on <a href="#">LinkedIn</a> | <a href="#">Twitter</a></p>
     </footer>
 
+    <script>
+        // Toggle dropdown menu functionality
+        document.querySelector('.menu-button').addEventListener('click', function () {
+            const menu = document.querySelector('.dropdown-menu');
+            menu.classList.toggle('show');
+        });
+    </script>
 </body>
-
 </html>
